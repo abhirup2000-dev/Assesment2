@@ -6,7 +6,7 @@ const FILE_TYPE_MAP = {
   'image/gif': 'gif',
   'image/webp': 'webp',
   'image/png': 'png',
-  'image/avip': 'avif',
+  'image/avif': 'avif',
   'image/svg': 'svg',
 }
 

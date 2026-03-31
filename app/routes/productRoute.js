@@ -11,6 +11,12 @@ router.get('/product/create-view', productController.viewcreateProduct)
 router.get('/products/dashboard', productController.viewDashboard)
 router.get('/admin/dashboard-view', productController.viewadminDashboard)
 
+//category
+router.get('/create/category-view',productController.viewcreateCategory)
+router.post('/create/category',productController.createCategory)
+
+//products
+router.get("/products/category-wise", productController.getProductsCategoryWise);
 router.post('/create-product', upload.single('image') ,productController.createProduct)
 router.get('/products', productController.getAllProducts)
 router.post('/product/update/:id', upload.single('image'), productController.updateProduct)

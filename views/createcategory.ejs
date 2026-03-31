@@ -1,0 +1,85 @@
+
+<style>
+  body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 60px auto;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  input:focus {
+    border-color: #4facfe;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #4facfe;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background: #00c6ff;
+  }
+</style>
+
+<div class="container">
+  <div class="card">
+    <h2>Create Category</h2>
+
+    <form action="/create/category" method="POST">
+      
+      <div class="form-group">
+        <label for="name">Category Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Enter category name"
+          required
+        >
+      </div>
+
+      <button type="submit" class="btn">Create Category</button>
+    </form>
+
+  </div>
+</div>

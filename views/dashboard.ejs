@@ -195,7 +195,6 @@
 
   <div class="top-bar">
     <h1 class="title">Product Dashboard</h1>
-    <a href="/product/create-view" class="create-btn">+ Create</a>
   </div>
 
   <div class="grid">
@@ -212,7 +211,7 @@
           <div class="card-body">
             <h3><%= product.name %></h3>
 
-            <span class="category"><%= product.category %></span>
+            <!-- <span class="category"><%= product.category %></span> -->
 
             <p class="desc"><%= product.description %></p>
 
@@ -226,7 +225,6 @@
     <% } else { %>
       <div class="empty">
         <h3>No products found</h3>
-        <p>Create your first product</p>
       </div>
     <% } %>
   </div>
